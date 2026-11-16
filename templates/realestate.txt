@@ -1,0 +1,31 @@
+=== step 1 ===
+Subject: enquiry response time at {name}
+Hi {name} team,
+
+{opener}
+
+We build AI agents for real estate agencies. Every new enquiry gets a call or message back within a minute. The agent asks about budget, area and timeline, books the viewing into your calendar and writes the lead into your CRM. Your agents only talk to people who are ready.
+
+{demo_sentence}
+{offer}
+
+Would a 15-minute call be worth it to see if this fits {name}?
+{booking_sentence}
+
+=== step 2 ===
+Subject: (thread)
+Hi again,
+
+A quick test you can run yourself: send an enquiry through your own website on a Saturday evening and time how long the first reply takes. That gap is what we close.
+
+{demo_sentence}
+If it would help, I can send a two-minute recording of the agent qualifying a buyer. Shall I?
+
+=== step 3 ===
+Subject: (thread)
+Hi,
+
+I'll stop here so I don't fill your inbox. If faster lead response ever becomes a priority at {name}, just reply to this email and I'll pick it up from there.
+
+{booking_sentence}
+Wishing you a good week.

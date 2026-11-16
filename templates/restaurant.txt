@@ -1,0 +1,31 @@
+=== step 1 ===
+Subject: phone during service at {name}
+Hi {name} team,
+
+{opener}
+
+We build AI phone agents for restaurants. The agent answers every call during the rush, takes the reservation into your booking system, answers menu and opening-hours questions, and can take takeaway orders and pass them to your POS. Anything unusual is handed to your staff.
+
+{demo_sentence}
+{offer}
+
+Would a 15-minute call be worth it to see if this fits {name}?
+{booking_sentence}
+
+=== step 2 ===
+Subject: (thread)
+Hi again,
+
+A simple way to check whether this matters for you: count the calls that ring out on one Friday evening. Each one is usually a table or an order that went somewhere else.
+
+{demo_sentence}
+If it would help, I can send a two-minute recording of the agent taking a reservation. Shall I?
+
+=== step 3 ===
+Subject: (thread)
+Hi,
+
+I'll stop here so I don't fill your inbox. If the phone ever becomes a problem worth fixing at {name}, just reply to this email and I'll pick it up from there.
+
+{booking_sentence}
+Wishing you a busy week.

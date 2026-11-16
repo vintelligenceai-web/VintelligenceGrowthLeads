@@ -1,0 +1,31 @@
+=== step 1 ===
+Subject: missed calls at {name}
+Hi {name} team,
+
+{opener}
+
+We build AI phone agents for {kind}. The agent answers every call straight away, lets the caller {action}, puts it into your calendar and sends the reminder. That includes evenings, weekends and the moments when everyone is busy. Anything unusual is passed to your staff.
+
+{demo_sentence}
+{offer}
+
+Would a 15-minute call be worth it to see if this fits {name}?
+{booking_sentence}
+
+=== step 2 ===
+Subject: (thread)
+Hi again,
+
+One thing I should have said more clearly: this does not replace your front desk. It picks up only the calls your team can't get to, such as after hours, during lunch, or when the line is busy, and hands everything else to a person.
+
+{demo_sentence}
+If it would help, I can send a two-minute recording of the agent handling a call for a business like {name}. Shall I?
+
+=== step 3 ===
+Subject: (thread)
+Hi,
+
+I'll stop here so I don't fill your inbox. If missed calls ever become a problem worth fixing at {name}, just reply to this email and I'll pick it up from there.
+
+{booking_sentence}
+Wishing you a good week.

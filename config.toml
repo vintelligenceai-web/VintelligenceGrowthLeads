@@ -1,0 +1,68 @@
+# Vintelligence growth engine - settings (no passwords here; those go in .env)
+
+[company]
+name = "Vintelligence"
+website = "https://vintelligenceai.com"
+sender_name = ""          # REQUIRED before live sending, e.g. "Ali Khan"
+sender_title = "Founder"
+postal_address = ""       # REQUIRED before live sending (US CAN-SPAM needs a real postal address)
+booking_link = ""         # e.g. a Calendly / Cal.com link for a 15-minute call
+demo_line = ""            # phone number of a live demo agent prospects can call
+offer = "We can set up a working demo agent for your business at no cost, so you can call it yourself before deciding anything."
+
+[sending]
+from_email = ""           # mailbox on a SEPARATE outreach domain, not gmail and not the main domain
+reply_to = ""             # optional; defaults to from_email
+daily_cap = 20            # per mailbox per day. Start at 5-10 for a new domain and raise slowly
+min_gap_seconds = 90
+max_gap_seconds = 240
+followup_days = [3, 7]    # step 2 is sent 3 days after step 1, step 3 is 7 days after step 2
+auto_approve_followups = true
+min_score = 50            # only draft emails for leads at or above this score
+
+[policy]
+# Cold-email rules differ per country. This is a working default, not legal advice.
+email_ok  = ["US"]                                          # opt-out regime (CAN-SPAM)
+email_b2b = ["GB", "IE", "FR", "SE", "FI", "CA", "AU", "NZ"] # B2B to published business addresses, with opt-out
+# WhatsApp: only businesses that publish a WhatsApp contact on their own site, messaged by hand, in these countries.
+whatsapp_ok = ["US", "GB", "IE", "FR", "SE", "FI", "CA", "AU", "NZ", "AE", "SA", "QA", "SG", "ZA", "PK"]
+# Every other country (DE, NL, IT, ES, AT, PL, BE, DK ...) needs prior consent for email:
+# those leads are routed to channel "manual" (phone, LinkedIn, contact form) and never emailed.
+
+[targets]
+# `python vi.py find` with no arguments walks every niche x city pair below.
+niches = ["dental", "restaurant", "realestate"]
+cities = ["Austin, Texas, USA", "Denver, Colorado, USA", "Manchester, UK"]
+per_search_limit = 40
+
+[intent]
+# Phrases people use when they need what we sell. `python vi.py signals` searches public posts.
+queries = [
+  "AI receptionist",
+  "AI voice agent",
+  "missed calls answering service",
+  "automate appointment booking calls",
+  "AI phone agent for restaurant",
+]
+lookback_days = 7
+
+[autopilot]
+# When true, the daily routine also approves first emails and sends them (within daily_cap).
+# Country rules, the opt-out list and the setup checks still apply. Turn on only when you trust the templates.
+enabled = false
+
+[opportunities]
+# Searches public project boards for people asking for work you can deliver.
+queries = ["ai voice agent", "ai chatbot", "ai receptionist", "n8n automation", "whatsapp chatbot", "appointment booking automation"]
+
+[youtube]
+per_day = 1                # videos to upload per day (YouTube's API allows about 6)
+privacy = "private"        # private, unlisted or public. New API projects are forced to private until Google audits them
+category_id = "24"         # 24 = Entertainment
+default_tags = ["short story", "ai film", "urdu story", "pakistani drama"]
+default_description = "An original short story. Characters and visuals are fictional and AI-generated."
+
+[whatsapp]
+number = ""                # your WhatsApp Business number with country code, e.g. +923001234567 (shown in emails and proposals)
+daily_limit = 15           # first messages per day. Keep it low: WhatsApp blocks numbers that message many strangers
+followup_after = 3         # days before one single follow-up
